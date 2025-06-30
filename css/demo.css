@@ -1,0 +1,29 @@
+h1{
+    color: aquamarine;
+}
+
+p{
+    color: rgb(204, 27, 145);
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: 200;
+    text-decoration:underline;
+    text-transform:capitalize;
+    width: 1000px;
+    font-style: italic;
+    word-spacing: 0.5px;
+    background-color: rgb(235, 239, 206);
+    border-bottom: 2px;
+    font-family: "Libertinus Math", system-ui;
+}
+
+a{
+    color: rgb(21, 197, 41);
+}
+
+body{
+    background-color: rgb(215, 30, 172);
+    background-image: url("../images/mocchau.webp");
+    background-size: cover;
+}
