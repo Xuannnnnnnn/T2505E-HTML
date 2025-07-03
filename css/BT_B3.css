@@ -1,0 +1,13 @@
+img{
+    max-width: 80%;
+    
+}
+
+#the1{
+    width: calc(40%);
+    float: left;
+    margin: 50px 20px;
+    background-color: rgb(3, 44, 44);
+    height: 100%;
+
+}

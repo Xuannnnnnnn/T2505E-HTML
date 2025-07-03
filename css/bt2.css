@@ -1,0 +1,50 @@
+img{
+    max-width: 100%;
+}
+
+div{
+    width: calc(25% - 30px);
+    float: left;
+    margin: 15px;/*top right bottom left*/
+    /* border: 1px solid red; */
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px rgb(46, 43, 43);
+    border-radius: 6px;
+    /* transform: translate(20px, 150px); */
+    /* transform: rotate(30deg); */
+    /* transform: scale(1.5); */
+    transition: all 500ms;
+}
+
+div:hover{
+    /* transform: rotate(30deg); */
+    /* transform: translate(20px, 150px); */
+    transform: scale(1.5);
+    background-color: rgb(176, 117, 40);
+}
+
+#a2{
+    background-color: rgb(219, 197, 240);
+}
+
+.a1{
+    background-color: rgb(188, 212, 163);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
