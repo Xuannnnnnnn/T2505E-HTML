@@ -1,5 +1,7 @@
 .to{
     display: flex;
+    width: 3000px;
+    margin: auto;
 }
 #the1{
     width: calc(30%);
