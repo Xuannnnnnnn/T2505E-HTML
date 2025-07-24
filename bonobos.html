@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonobos</title>
+    <link rel="stylesheet" href="css/bonobos.css" />
+</head>
+<body>
+    <div class="a1">
+        <h1>Shipping address</h1>
+        <div class="a12">
+            <input type="text" name="first_name" placeholder=" " id="first_name" required> 
+            <label for="first_name" class="label">First name*</label> 
+        </div>
+        <div class="a12">
+            <input type="text" name="last_name" placeholder=" " id="last_name" required> 
+            <label for="last_name" class="label">Last name*</label>            
+        </div>
+        <div class="a13">
+            <input type="text" name="address_1" placeholder=" " id="address" required>
+            <label for="address" class="label">Address Line 1*</label>           
+        </div>
+        <div class="a13">
+            <input type="text" name="address_2" placeholder=" " id="address_2" required>
+            <label for="address_2" class="label">Address Line 2*</label>           
+        </div>
+        <div class="a12">
+            <select name="city" id="Country" required class="op">
+                <option value="" disabled selected hidden></option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="hochiminh">Hồ Chí Minh</option>
+                <option value="nha_trang">Nha Trang</option>
+            </select>
+            <label for="Country" class="label">Country*</label> 
+        </div>
+        <div class="a12">
+            <input type="text" name="city" placeholder=" " id="city" required> 
+            <label for="city" class="label">City*</label> 
+        </div>
+        <div class="a12">
+            <select name="state" id="state" required class="op">
+                <option value="" disabled selected hidden></option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="hochiminh">Hồ Chí Minh</option>
+                <option value="nha_trang">Nha Trang</option>
+            </select>
+            <label for="state" class="label">State*</label> 
+        </div>
+        <div class="a12">
+            <input type="text" name="zip" placeholder=" " id="zip" required> 
+            <label for="zip" class="label">Zip*</label> 
+        </div>
+        <div class="a13">
+            <input type="text" name="phone_number" placeholder=" " id="phone_number" required>
+            <label for="phone_number" class="label">Phone number*
+                <br> In case questions arise
+            </label>           
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="terms" value="agree" id="terms" checked />
+            <label for="terms">Make Default</label>
+        </div>
+        <div class="a13">
+                <button type="button">Continue to Billing Information</button>
+        </div>
+    </div>
+
+    <div class="a2">
+        <h1>Order summer</h1>
+        <p class="a21">#314415611</p>
+        <div>
+            <div class="a21">Items</div>
+            <div>1</div>
+        </div>
+    </div>
+
+    <div class="a2">
+        <h1>Order Details</h1>
+    </div>
+
+</body>
+</html>

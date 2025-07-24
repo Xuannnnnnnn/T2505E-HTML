@@ -1,0 +1,28 @@
+.form-group{
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-group label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input[type = "text"],
+.form-group input[type = "date"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d97d7d;
+}
+
+.form-group input[name = "password"]{
+    background-color: aqua;
+}
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
