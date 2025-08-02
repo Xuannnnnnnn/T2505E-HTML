@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/popup.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a1">
+        <button onclick="modal()" type="button" id="a2">Show Modal</button>
+        <div class="a3" id="a3">
+            <div class="a5"></div>
+            <div class="a4">
+                <button type="button" class="a6">X</button>
+                <button onclick="closeModal()" type="button" class="a7">X</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function modal(){
+            var n = document.getElementById("a3");/* n = id_a3*/
+            n.classList.add("active");/* them class active*/
+        }
+        function closeModal(){
+            var n = document.getElementById("a3");
+            n.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

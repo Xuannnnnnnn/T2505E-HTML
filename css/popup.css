@@ -1,0 +1,69 @@
+.a1{
+    background-color:rgb(116, 171, 171);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center; /* can doc*/
+    align-items: center; /* can ngang*/
+}
+#a2{
+    background-color: rgb(202, 98, 98);
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    color: aliceblue;
+    position: absolute; /*cho phep đặt ở ví trí tự do */
+    z-index: 1;
+    border-radius: 5%;
+}
+.a3{
+    display: none;
+}
+.a3.active{
+    display: block;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2; /*cho phep de len 1*/
+}   
+.a5{
+    width: 700px;
+    height: 700px;
+    background-color: rgb(202, 98, 98);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+.a4{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 5%;
+    position: absolute;
+    z-index: 4;
+}
+.a6{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(208, 205, 205);
+    float: left;
+    border-radius: 10%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.a7{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(208, 205, 205);
+    float: right;
+    border-radius: 10%;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+
+
