@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/thoitiet.css">
+    <title>Thời tiết</title>
+</head>
+<body>
+    <main>
+        <input id="city" name="city" onkeyup="searchWeather()" placeholder="Nhap city">
+        <div class="a">
+            <div class="a1"><img src="#" alt="" id="icon"></div>
+            <div class="a2"><p><span id="tt_temp"></span>&degC</p></div>
+            <div class="a3">
+                <p>Cảm giác thực: <span id="feel_like"></span></p>
+                <p>Tốc độ gió: <span id="speed"></span></p>
+                <p>Vị trí: <span id="country"></span></p>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        function searchWeather(){
+            if(event.keyCode == 13){
+                var ip = document.getElementById("city");
+                var city = ip.value;
+                const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+                fetch(url).then(rs=>rs.json())
+                .then(rs=>{
+                document.getElementById("tt_temp").innerText = rs.main.temp;
+                document.getElementById("feel_like").innerText = rs.main.feels_like;
+                document.getElementById("speed").innerText = rs.wind.speed;
+                document.getElementById("country").innerText = rs.sys.country;
+                for(var i=0;i<rs.weather.length;i++){
+                    var icon = rs.weather[i].icon;
+                    document.getElementById("icon").src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+                }
+                }) 
+            }
+        }       
+    </script>
+    
+</body>
+</html>

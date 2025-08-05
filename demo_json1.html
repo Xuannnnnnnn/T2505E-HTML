@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="section main">
+        <div class="container" style="font-size: 30px;">
+            <img src="#" alt="" id="sp_image">
+            <h1 id="sp_name" >Váy thời trang</h1>
+            <p>Giá tiền: <span id="sp_price">12$</span></p>
+            <p>Số lượng: <span id="sp_qty">3</span></p>
+            <p>Rate: <span id="rating">0</span></p>
+        </div>
+    </main>
+    <script text="text/javascript">
+        //call api và sd dữ liệu từ api vào giao diện
+        const url = "http://127.0.0.1:5501/data/sanpham.json";
+        fetch(url).then(rs=>rs.json())
+        .then(rs=>{
+            //lấy dữ liệu của json      
+            var sp_name = document.getElementById("sp_name");
+            sp_name.innerText = rs.name;
+            var sp_price = document.getElementById("sp_price");
+            sp_price.innerText = rs.price;
+            document.getElementById("sp_qty").innerText = rs.qty;
+            document.getElementById("sp_image").src = rs.thumbnail;
+            document.getElementById("rating").innerText = rs.review.rating;
+            console.log(rs);
+        })
+    </script>
+</body>
+</html>

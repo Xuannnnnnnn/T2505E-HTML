@@ -1,0 +1,14 @@
+.a1{
+    background-color: rgb(124, 161, 149);
+    width: 100%;
+    height: 100%;
+}
+.a2{
+    float: left;
+    width: 20%;
+    height: 100px;
+    background-color: beige;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
