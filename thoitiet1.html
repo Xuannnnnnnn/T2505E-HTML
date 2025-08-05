@@ -18,12 +18,20 @@
                 for(var i=0;i<rs.list.length;i++){
                     var the = document.getElementById("a2");
                     var nhietdo = rs.list[i].main.temp;
-                    var nhietdothuc = rs.list[i].main.feels_like;
+                    var time = rs.list[i].dt_txt;
+                    var des = rs.list[i].weather[0].description;
+                    var icon = rs.list[i].weather[0].icon;
                     var the2 = document.createElement("div");//tao the dang div
                     the2.className ="a2";
                     the2.innerHTML = `
-                    <p>Nhiệt độ: ${nhietdo}°C</p>
-                    <p>Nhiệt độ thực: ${nhietdothuc}°C</p>
+                    <div class = "b">
+                        <p>${time}</p>
+                        <p class = "b2">${nhietdo}°C</p>
+                        <p>${des}</p>
+                    </div>
+                    <div class = "b1">
+                        <img src="https://openweathermap.org/img/wn/${icon}@2x.png">
+                    </div>
                     `;
                     the.appendChild(the2);
                 }

@@ -1,14 +1,24 @@
 .a1{
-    background-color: rgb(124, 161, 149);
-    width: 100%;
-    height: 100%;
+    background-color: rgb(63, 112, 160);
+    display: flex;
 }
 .a2{
     float: left;
     width: 20%;
-    height: 100px;
-    background-color: beige;
-    margin: 10px;
+    background-color: rgb(168, 198, 217);
+    margin-top: 20px;
+    margin-left: 3.3%;
+    margin-bottom: 20px;
     border-radius: 10px;
-    
+    padding-left: 10px;
+}   
+.b{
+    float: left;
+}
+.b1{
+    float: right;
+}
+.b2{
+    font-size: 30px;
+    font-weight: 700;
 }
