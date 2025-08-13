@@ -1,0 +1,16 @@
+body{
+    font-size: 14px;
+    font-family: sans-serif;
+    background-image: url("../images/sky.jpg");
+    background-size: cover;
+}
+.item{
+    background-color: #00000050;
+    height: 230px;
+}
+.item h3{
+    font-size: 0.9rem;
+}
+.item img{
+
+}
